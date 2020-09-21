@@ -1,4 +1,9 @@
-self.addEventListener('push', () => {
+self.addEventListener('push', (event) => {
+  if (event.data) {
+    console.log('This push event has data: ', event.data);
+  } else {
+    console.log('This push event has no data.');
+  }
   self.registration.showNotification('test message', {});
 });
 

@@ -9,12 +9,20 @@ push.setVapidDetails('mailto:vivek.m@hubengage.com', vapidKeys.publicKey, vapidK
 
 let sub = {
   endpoint:
-    'https://fcm.googleapis.com/fcm/send/cdGvBkNLbBA:APA91bGXGIx9wO3TPrmeTQOPGY4gUic_IDi8jHdrnt6-F3z0uA8iXjDvIBkFhI6sQ4iJiHtImyEOiqWuYzYw6ITl9Q9A30Oe9ePE2csWWKiEuDDDT3fXhuRGi9P-6vnOSs8vUOWJM7Ug',
+    'https://fcm.googleapis.com/fcm/send/esPsOe0g9yE:APA91bGXP5QXZuXHQJ6gI83ForX52G9HwfqQrgLOCQ-ma4lwX-JYwDT7QNpqmFd4-2-PGyeD1F66AIcgv9xN7O0XcAfogacg5wTDFqEfLJnaFWYM1IAM1m7naEtUTsksvFGP26XWNsf4',
   expirationTime: null,
   keys: {
-    p256dh: 'BOu0B7egOycibbOsV_hFLs9TJ-an1KRl44UU0Is4VE6NswV_hzJwjj6NxcIwugOTpZ88PoYq7I5LfgE13nn6cYs',
-    auth: 'Ev8pYhikPl8f99sKiJJxiA',
+    p256dh: 'BIPru0Itc6imgDt2_4IkD3l33LSpULfHXObP42TbEx9q78Wu0EzHuMx9R55wX5YN5u3K_OTdcnGPHcNHC6Zss54',
+    auth: 'VGWiCUqXmlDcj78aWqtOyw',
   },
 };
 
-push.sendNotification(sub, 'test message');
+let payload = {
+  title: 'title',
+  body: 'body',
+  data: {
+    a: 1,
+    b: 2,
+  },
+};
+push.sendNotification(sub, payload);
