@@ -1,6 +1,6 @@
 self.addEventListener('push', (event) => {
   if (event.data) {
-    console.log('This push event has data: ', event.data);
+    console.log('This push event has data: ', event.data.blob().toString());
   } else {
     console.log('This push event has no data.');
   }
