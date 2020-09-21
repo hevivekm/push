@@ -3,7 +3,7 @@ self.addEventListener('push', (event) => {
   let body = 'test body';
   if (event.data) {
     console.log('This push event has data: ', event.data.blob().toString());
-    console.log('This push event has data: ', JSON.stringify(event.data.json()));
+    console.log('This push event has data: ', JSON.stringify(event.data));
     console.log('This push event has data: ', event.data.text());
     let d = JSON.parse(event.data.json());
     title = d.title;
