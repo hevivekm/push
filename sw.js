@@ -1,12 +1,33 @@
 self.addEventListener('push', (event) => {
+  let title = 'test message';
+  let body = 'test body';
   if (event.data) {
     console.log('This push event has data: ', event.data.blob().toString());
     console.log('This push event has data: ', JSON.stringify(event.data.json()));
     console.log('This push event has data: ', event.data.text());
+    let d = JSON.stringify(event.data.json());
+    title = d.title;
+    body = d.body;
   } else {
     console.log('This push event has no data.');
   }
+
   self.registration.showNotification('test message', {});
+  self.registration.showNotification(title, {
+    body,
+    actions: [
+      {
+        action: 'coffee-action',
+        title: 'Coffee',
+        icon: '/images/demos/action-1-128x128.png',
+      },
+      {
+        action: 'doughnut-action',
+        title: 'Doughnut',
+        icon: '/images/demos/action-2-128x128.png',
+      },
+    ],
+  });
 });
 
 // self.addEventListener('push', function (e) {
