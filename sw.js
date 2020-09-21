@@ -12,7 +12,7 @@ self.addEventListener('push', (event) => {
     console.log('This push event has no data.');
   }
 
-  self.registration.showNotification('test message', {});
+  // self.registration.showNotification('test message', {});
   self.registration.showNotification(title, {
     body,
     actions: [
