@@ -20,11 +20,6 @@ self.addEventListener('push', (event) => {
         title: 'Coffee',
         icon: '/images/demos/action-1-128x128.png',
       },
-      {
-        action: 'doughnut-action',
-        title: 'Doughnut',
-        icon: '/images/demos/action-2-128x128.png',
-      },
     ],
   });
 });
