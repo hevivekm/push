@@ -9,11 +9,11 @@ push.setVapidDetails('mailto:vivek.m@hubengage.com', vapidKeys.publicKey, vapidK
 
 let sub = {
   endpoint:
-    'https://fcm.googleapis.com/fcm/send/fhuC290cCTM:APA91bFbQNJG5d09TO5Tk_cNOvULBJ4YPw03X0Bsg06zsuHDN1_MMqv1upOVt8EBW14WH_pvMbXAKJb47ESwi21spbDM1zJBhjjCJYdj3jAfJZpFuliil9JTSk9i2pD3z_fhzz6jXl7A',
+    'https://fcm.googleapis.com/fcm/send/e0XsVE7uX94:APA91bEgg5qi0DNp253oZsRUxz54K8Awi5Q67E9x1UcFM_kZaMga8nwj5esqYTR8DPkSTYuRJIdWDwD826-Zy1i8-AwzR5L1E4K-7uwJx_2_bvVvcZ0gGC-3bG0s_73GsZL9z1v5ORRR',
   expirationTime: null,
   keys: {
-    p256dh: 'BBZ2RCHruNxRG_WYpeXL0DCuL0YYzrLztPlkjiNlbdG8Vm4I4z9P_ycEjD-20mCBjMFAfRusVyJUKlZK8fW7S60',
-    auth: 'O2_O9AIc8gvYfq75XroTkA',
+    p256dh: 'BPVqQgX9_9RbQklAdPCa0o7BAziGDE_ahOHQvy-T1iCmcAUrluqvWDN7ZBqQGtBPQe1FN9RyfOk0g7eMwlHJUCQ',
+    auth: '7KN7s4dO7E1fS8HCIvdvdA',
   },
 };
 
