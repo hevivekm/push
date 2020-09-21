@@ -17,14 +17,12 @@ let sub = {
   },
 };
 
-let payload = Buffer.from(
-  JSON.stringify({
-    title: 'title',
-    body: 'body',
-    data: {
-      a: 1,
-      b: 2,
-    },
-  })
-);
+let payload = JSON.stringify({
+  title: 'title',
+  body: 'body',
+  data: {
+    a: 1,
+    b: 2,
+  },
+});
 push.sendNotification(sub, payload);
