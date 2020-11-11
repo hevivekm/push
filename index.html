@@ -10,8 +10,12 @@
 
     <script>
       addEventListener('load', async () => {
-        let sw = await navigator.serviceWorker.register('./sw.js');
-        console.log(sw);
+        try {
+          let sw = await navigator.serviceWorker.register('./sw.js');
+          console.log(sw);
+        } catch (e) {
+          console.log(JSON.stringify(e));
+        }
       });
 
       async function subscribe() {
