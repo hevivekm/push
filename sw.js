@@ -18,7 +18,6 @@ self.addEventListener('push', (event) => {
       {
         action: 'coffee-action',
         title: 'Coffee',
-        icon: '/images/demos/action-1-128x128.png',
       },
     ],
   });
