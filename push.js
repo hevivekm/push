@@ -7,46 +7,35 @@ let vapidKeys = {
 
 push.setVapidDetails('mailto:vivek.m@hubengage.com', vapidKeys.publicKey, vapidKeys.privateKey);
 
-let sub =
-  // {
-  //   endpoint:
-  //     'https://fcm.googleapis.com/fcm/send/d-JoSM-fhIs:APA91bGa2TMA0GayCJc4IQqmA2uRYJurgUStrhjVa93MErhVl1GUFBz_V2c5cHf9okPxqUyg2DZbWFlOQCBQPV5sdK48j3dzEGrMJtvPT_yxf7sRycopWDhOS_MSim5y7p5S5Ds4fGZ3',
-  //   expirationTime: null,
-  //   keys: {
-  //     p256dh: 'BHOdQ2tkJOjI2OP0s6Sggj78PW3-3vbrJwOOU5gu6PKlES8lT0Aneui1-YjJxTKaZvVB1r5gUr6TR-ExwFmZsbU',
-  //     auth: 'GJz2dUro57y5ZdukGA57Jw',
-  //   },
-  // };
-
-  // {
-  //   endpoint:
-  //     'https://fcm.googleapis.com/fcm/send/dovr_ljEWQ0:APA91bHbfgukskGNDecqfZX7cEebJzxZYQHYrs0o4CsN-w5n4ztYweSs1YYJIWM3NcrAo0vsjvLxUEVMa6IhqVFEWzqoGYbYbNusySI5FFk9h_RlQdtHD3vpYi020O549rVVg0eommmh',
-  //   expirationTime: null,
-  //   keys: {
-  //     p256dh: 'BLcHTt2t5KSNZpx6O1Jq_0jfZ6HFvTERfqydw2ZEx7S2HSZfFipVm9QUkCLdnyu8BOCA0UuLNJOCv-49mxDbYQU',
-  //     auth: 'MywclL8hF-meovYPrkuYVA',
-  //   },
-  // };
-
-  {
-    endpoint:
-      'https://fcm.googleapis.com/fcm/send/d_PncSbU3Vo:APA91bH2ogt99hOpNNSjCQzpKtt8uMMI17FxOr9MWZRBpUBnmchEZk2P-PUfw3r2Pq2fyCsxXQib2AyHmrdyDF1J72hMPxusSyrhRjJ2T7Pbt-9wX-sCCwANanQIwK_OTVym_qSGIcI_',
-    expirationTime: null,
-    keys: {
-      p256dh: 'BFI82CzU2-LM3gvhjnRbx2GDb4oZ3GZG_8NSWlaMbCdG7JPVU1humc251pmi4Db73VePk-hDOWnCWx28k0YfmDY',
-      auth: 'OCy39jqRF_zurYo0okO6gQ',
-    },
-  };
+// let sub = {
+//   endpoint:
+//     'https://fcm.googleapis.com/fcm/send/dLE6L9vZ8Bk:APA91bF3iv4s8yA1IQmJslo2wuGLtmH9lAMcLCd404mqVDBbiVbFbyy80724ExYuzC8OK8d8lV_kaT2gHT0rxoHeGlQoka_KaaFiiqbuut7CaQdU5V-VpWigopR_7nUu7FlPfa82s7_F',
+//   expirationTime: null,
+//   keys: {
+//     p256dh: 'BHPbpeBIPraQOQnYe1nvoI3qmH8xMAJ267hj73cW2R4S2Qq-0fHS4qQmrdcfpvN_Vsbt40VkqG2crRYhsfVDR9g',
+//     auth: 'i95ZdwFDtA2sofwyr4sf9A',
+//   },
+// };
+let sub = {
+  endpoint:
+    'https://fcm.googleapis.com/fcm/send/ek5XCLS0tHs:APA91bEsZBRv7qitv-81YY66xyw0wmtbE1y8zETQqbl_6k-qfLqDek3-AIHbSQr4ZEHvqGcMgGpJ5VNuzu36RlXNiSYnUBirTOtiLvxfG5VFeoxGXa5n4SfuFQ6bqNqny48FrTTIMjTL',
+  expirationTime: null,
+  keys: {
+    p256dh: 'BI_Um2GRI92uBlhVpD24nTcUYKp9WL9GUs7jOu6QI0EWpmIjPB9pbwZD_XyuBd_OF_BHIXA2rTjGZ3BrTbDtCrE',
+    auth: '1Dq0t5jnPBuG5ATGvkTg1A',
+  },
+};
 let payload = JSON.stringify({
-  title: 'title',
-  body: 'body',
-  image: 'https://www.flaticon.com/svg/static/icons/svg/831/831276.svg',
-  icon: 'https://www.flaticon.com/svg/static/icons/svg/831/831276.svg',
+  title: 'title 5',
+  body: 'body 2',
+  image: 'https://img.icons8.com/ios/452/online--v2.png',
+  icon: 'https://img.icons8.com/ios/452/online--v2.png',
   data: {
     a: 1,
     b: 2,
   },
 });
+
 (async () => {
   try {
     let r = new Promise(async (resolve, reject) => {

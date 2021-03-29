@@ -14,6 +14,7 @@ self.addEventListener('push', (event) => {
   // self.registration.showNotification('test message', {});
   self.registration.showNotification(title, {
     body,
+    icon: './pizza.png',
     actions: [
       {
         action: 'coffee-action',
